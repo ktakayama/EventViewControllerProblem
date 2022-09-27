@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  EventViewControllerSample
-//
-//  Created by Kyosuke Takayama on 2022/09/26.
-//
-
 import UIKit
 import EventKit
 import EventKitUI

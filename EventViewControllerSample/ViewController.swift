@@ -27,10 +27,11 @@ class ViewController: UITableViewController {
                 return
             }
 
-            let alert = UIAlertController(title: "no access to calendar", message: nil, preferredStyle: .alert)
-
-            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-            self.present(alert, animated: true)
+            DispatchQueue.main.async {
+                let alert = UIAlertController(title: "no access to calendar", message: nil, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+                self.present(alert, animated: true)
+            }
         }
     }
 
